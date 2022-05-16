@@ -3,20 +3,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
 
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
 .menu{
-    background-color: rgba(255, 255, 255, 0.449);
-   padding: 30px;
-   margin: 5px;
-   border-radius: 10px;
-   text-align: center;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.853);
+    padding: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
+.menu i{
+    font-size: 25px;
+}
 .menu ul a{
     
     color: black;
@@ -27,17 +38,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-
 }
 
 h1{
-   background-color: rgba(240, 184, 81, 0.394);
-   padding: 10px;
-   margin: 5px;
-   border-radius: 10px;
-   text-align: center;
-   width: 80%;
+    background-color: rgba(240, 184, 81, 0.394);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
     max-width: 1200px;
     margin: auto;
    
@@ -65,8 +74,107 @@ h3{
 footer{
     background: rgba(240, 184, 81, 0.394);
     padding: 30px;
-   margin: 5px;
-   border-radius: 10px;
-   text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    
 
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 5rem;
+    justify-content: center;
+}
+.card img{
+    width: 20rem;
+    height: 20rem;
+    border: 20px solid beige;
+    border-radius: 10px ;
+}
+.cards .nombres{
+    text-decoration:overline;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+
+
+
+.psomos{
+    text-align: center;
+}
+
+.somos{
+    text-align: center;
+}
+.somos img{
+    width: 500px;
+    height: 400px;
+    float: unset;
+    border-radius: 20px  20px 30px 1px;
+    margin: 10px auto;
+    text-align: center;
+    -webkit-border-radius: 20px  0px 30px 20px;
+    -moz-border-radius: 20px  20px 30px 1px;
+    -ms-border-radius: 20px  20px 30px 1px;
+    -o-border-radius: 20px  20px 30px 1px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.dog{
+    margin-top: 10px;
+}
+
+.grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+.docker{
+    text-align: center;
+}
+
+.masinfo{
+    min-width: 100px;
+    display: inline-block;
+    border: 2px solid #1a1b4b;
+    color: #1a1b4b;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 0.50rem;
+    cursor: pointer;
+    font-size: 21px;
+    line-height: 1;
+    letter-spacing: 0.004em;
+    margin: 1rem auto;
+    text-transform: capitalize;
+    text-decoration: none;
+    -webkit-border-radius: 0.50rem;
+    -moz-border-radius: 0.50rem;
+    -ms-border-radius: 0.50rem;
+    -o-border-radius: 0.50rem;
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    font-weight: bold;
+}
+.masinfo:hover{
+    color: #fff;
+    background: #1a1b4b;
+}
+
+.redessociales{
+    text-align: center;
 }
